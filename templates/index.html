@@ -1,0 +1,157 @@
+<!-DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Upleafed</title>
+      <style>
+          body {
+            text-align: center;
+          }
+          td, th {
+              border-style: solid;
+              border-color: rgb(44, 3, 44);
+              border-width: 2px;
+              padding: 5px;
+              text-align: center;
+          }
+          table.center {
+              margin-left: auto;
+              margin-right: auto;
+          }
+          h1 {
+              font-size: 50px;
+              font-style: italic;
+              padding: 0.1px;
+          }
+          #form {
+              background-color: rgb(238, 238, 217);
+              padding: 10px;
+          }
+          #description {
+              padding: 60px;
+              background-color: rgb(232, 247, 232);
+          }
+          #specificDescrip {
+                text-align: left;
+          }
+          #vine {
+              width: 1000px;
+              height: 100px;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #main {
+              background-color: rgb(244, 250, 218);
+              padding: 5px;
+          }
+          nav {
+              text-align: left;
+              background-color: rgb(244, 250, 218);
+              padding: 5px;
+          }
+          #tree1 {
+            width: 150px;
+            height: 200px;
+            padding: 10px;
+          }
+          #tree2 {
+            width: 150px;
+            height: 200px;
+            padding: 10px;
+          }
+          .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+        .b {
+            background-color: rgb(248, 244, 244);
+            color: black;
+            margin: 5px;
+        }
+      </style>
+  </head>
+  <body>
+    <nav>
+        <button class="b"><a href="#form">Complete Task</a></button>
+        <button class="b"> <a href="#sponsors" >Our Website</a></button>
+    </nav>
+    <div id="main">
+      <h1 id="shopname">Upleafed</h1>
+      <h2><em>Enjoy your time!</em></h2>
+
+    </div>
+    <h3><u>Task Designations</u></h3>
+    <div class="row">
+        <div class="column">
+            <img id="tree1" ="https://i.imgur.com/MgbxaxN.jpg" width="100" length="100" alt text="Plant Picture">
+        </div>
+        <table class="center" class="column">
+            <tbody>
+                <tr>
+                    <th>Task Number</th>
+                    <th>Task</th>
+                    <th>Resources</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Have Dinner with Two Co-workers</td>
+                    <td><a href="https://www.tripadvisor.ca/Restaurants-g154913-zfp58-Calgary_Alberta.html" target="_blank">Best Restaurants</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Go to a Yoga Studio</td>
+                    <td><a href="https://www.thebestcalgary.com/best-yoga-classes-calgary/" target="_blank">Popular Yoga Studios</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Go for a 30 Minute Run</td>
+                    <td><a href="https://www.tripadvisor.ca/Attractions-g154913-Activities-c57-Calgary_Alberta.html" target="_blank">Nature and Parks</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Play a Boardgame with Some Colleagues</td>
+                    <td><a href="https://www.theboardgamefamily.com/2013/10/your-top-100-board-games/" target="_blank">Board Games</a></td>
+                </tr>
+                <tr> 
+                    <td>5</td>
+                    <td>Eat a Salad</td>
+                    <td><a href="https://www.loveandlemons.com/salad-recipes/" target="_blank">Homemade Salad Recipes</a></td>
+                </tr>
+            </tbody>
+        </table>
+       
+        <div class="column">
+            <img id="tree2" src="https://i.imgur.com/MgbxaxN.jpg" width="100" length="100" alt text="Plant Picture">
+        </div>
+    </div>
+    <br><br>
+    <div id="description">
+        <h2>What is Upleafed?</h2>
+        <p id="specificDescrip">Upleafed is an organization that promotes mental, social, physical and spirtual wellbeing in workplaces. At first, the leaves of the wellness tree glow red. If a task is completed, the leaf turns green. Once the 
+            entire tree is green, the workplace will be rewarded.
+            Completing the tasks requires collaboration. For more information, visit <a href="" target="_blank">our website</a>.</p>
+            
+        <br>
+    </div>
+    <hr>
+    <div id="form">
+        <p>Task Submission Form</p>
+        <form action="/api/leaf" method="get">
+            <label>Task Number</label>
+            <input type="text" name="leaf">
+            <button type="submit" onClick="hide()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function hide () {
+            document.getElementById("form").style.display= "none";
+            location.href="submission.html";
+        }
+    </script>
+  </body>
+</html>
+
