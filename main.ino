@@ -6,7 +6,7 @@ bool led4 = false;
 bool led5 = false;
 
 
-// Remember to change led pinouts in production code
+// Remember to change led pin outs in production code
 void setup() {
  Serial.begin(115200);
  Serial.setTimeout(1);
